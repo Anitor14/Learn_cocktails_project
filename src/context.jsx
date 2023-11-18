@@ -9,6 +9,7 @@ const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [cocktails, setCocktails] = useState([]);
 
+  //   this is a comment.
   const fetchDrinks = useCallback(async () => {
     setLoading(true);
     const response = await fetch(`${url}${searchTerm}`);
